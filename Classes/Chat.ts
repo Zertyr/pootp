@@ -39,6 +39,9 @@ export default class Chat extends Mammifere implements Terrestre {
         }
     }
 
+    /**
+     * Simule le miaulement du chat
+     */
     miaule():void {
         console.log(`woof woof`);
     }

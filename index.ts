@@ -45,7 +45,6 @@ console.log('-------------------END 3-----------------------');
 const  animaux: Animal[] = [chat,dauphin];
 const  mammiferes: Mammifere[] = [chat,dauphin];
 
-
 console.log('-------------------START 4-----------------------');
 //On affiche le tableau des animaux
 console.log(animaux);
