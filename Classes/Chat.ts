@@ -40,7 +40,7 @@ export default class Chat extends Mammifere implements Terrestre {
     }
 
     miaule():void {
-        console.log(`woof`);
+        console.log(`woof woof`);
     }
 
     /**
@@ -49,9 +49,8 @@ export default class Chat extends Mammifere implements Terrestre {
      * @param marcher: on indique true ou false si il marche ou si il court
     */
     display(nager?: boolean, marcher?: boolean): void {
-        console.log(`Je suis un Chat de nom ${this._nom}, je fais ${this._poids} kg et je suis née le ${this._dateNaissance}.\n
-        Mon principal signe distinctif est que je fais `);
-        this.miaule();
+        console.log(`Je suis un Chat de nom ${this._nom}, je fais ${this._poids} kg et je suis née le ${this.dateNaissance}, j'ai donc ${this.age} ans.\n
+        Mon principal signe distinctif est que je fais : `);
         this.miaule();
         if (nager) {
             this.nager(nager)

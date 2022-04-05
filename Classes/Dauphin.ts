@@ -47,8 +47,8 @@ export default class Dauphin extends Mammifere implements Aquatique {
      * @param respirerSousEau: on indique true ou false si il respire pour afficher la phrase
     */
     display(nager?: boolean, respirerSousEau?: boolean): void {
-        console.log(`Je suis un Dauphin de nom ${this._nom}, je fais ${this._poids} kg et je suis née le ${this._dateNaissance}.\n
-        De plus mon principal signe distinctif est que je fais `);
+        console.log(`Je suis un Dauphin de nom ${this._nom}, je fais ${this._poids} kg et je suis née le ${this.dateNaissance}, j'ai donc ${this.age} ans.\n
+        De plus mon principal signe distinctif est que je fais :`);
         this.cliqueter();
         if (nager) {
             this.nager(nager)
